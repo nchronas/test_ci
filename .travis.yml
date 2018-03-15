@@ -8,8 +8,7 @@ matrix:
       compiler: gcc
 
 before_install:
-  - if [ "$TRAVIS_OS_NAME" == "linux" ]; then sudo apt-get install --assume-yes --quiet gcc-multilib; fi
-install:
-  - apt-get install cpputest
+  - sudo apt-get install --assume-yes --quiet gcc-multilib &&
+    sudo apt-get install --assume-yes cpputest
 script:
   - echo "Hello"
