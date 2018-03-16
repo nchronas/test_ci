@@ -13,5 +13,6 @@ install:
   - gem install rspec
   - gem install rubocop
 script:
-  - gcc -I../Unity/src/ -Isrc/ test/dt.c src/d.c ../Unity/src/unity.c -o tde
+  - ls
+  - gcc -I./Unity/src/ -I./src/ ./test/dt.c src/d.c ./Unity/src/unity.c -o tde
   - ./tde 
