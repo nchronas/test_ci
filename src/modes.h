@@ -4,8 +4,8 @@
 #include <stdbool.h>
 
 typedef enum {
-   DELFI_NOMINAL = 0,
-   DELFI_SAFE    = 1,
+   DELFI_SAFE    = 0,
+   DELFI_NOMINAL = 1,
    LAST_MODE_ID  = 2
 }sat_mode_id;
 
